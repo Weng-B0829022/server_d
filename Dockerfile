@@ -12,7 +12,7 @@ COPY dist ./dist
 
 # 安裝 express（如果未安裝）
 RUN npm install express
-
+RUN npm install pg
 # 暴露端口
 EXPOSE 3000
 
