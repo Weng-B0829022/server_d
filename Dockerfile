@@ -5,7 +5,9 @@ FROM node:14
 WORKDIR /app
 
 # 複製 server.js 文件到工作目錄
-COPY server.js ./
+COPY server.js  ./
+COPY routes     ./routes
+COPY db         ./db
 
 # 複製 dist 文件夾到工作目錄
 COPY dist ./dist
